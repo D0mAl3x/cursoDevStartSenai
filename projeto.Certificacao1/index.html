@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto Certificacao 1</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="banner-ginastica.jpg" alt="Banner sobre ginástica artística" />
+                        </td>
+                        <td>
+                            <h1>
+                                Competição de <br />
+                                Ginástica Artística
+                            </h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        <hr />
+        <hr />
+        <section class="entrada_dados">
+            <div>
+                <form action="projetoCertificacao1.js" method="get">
+                    <br />
+                    <label for="nome_atleta" class="nome_atleta">
+                        <table name="nome_atleta" id="nome_atleta">
+                            <tr>
+                                <td>
+                                    <p>Nome do(a) Atleta:</p>
+                                </td>
+                                <td>
+                                    <input type="text" name="nome_competidor" id="nome-atleta" />
+                                </td>
+                            </tr>
+                        </table>
+                    </label>
+                    <br />
+                    <label for="notas">
+                        <table name="notas" id="notas">
+                            <tr>
+                                <th>Critérios:</th>
+                                <th>Nota Recebida:</th>
+                            </tr>
+                            <tr>
+                                <td>Tempo de duração da apresentação:</td>
+                                <td><input type="number" name="nota1" id="nota1" min="1" max="10" step="0.01" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Originalidade da coreografia:</td>
+                                <td><input type="number" name="nota2" id="nota2" min="1" max="10" step="0.01" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Postura do(a) atleta:</td>
+                                <td><input type="number" name="nota3" id="nota3" min="1" max="10" step="0.01" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Dificuldade das acrobacias:</td>
+                                <td><input type="number" name="nota4" id="nota4" min="1" max="10" step="0.01" required/></td>
+                            </tr>
+                            <tr>
+                                <td>Sincronismo:</td>
+                                <td><input type="number" name="nota5" id="nota5" min="1" max="10" step="0.01" required/></td>
+                            </tr>
+                        </table>
+                    </label>
+                    <br>
+                    <div class="buttons" id="botoes">
+                        <input type="button" value="Adicionar Notas" name="btnAdicionar" class="add" onclick="return receberNotas()"/>
+                        <input type="button" value="Calcular Resultado" name="btnCalcular" class="add" />
+                    </div>
+                </form>
+            </div>
+            <div>
+                <br>
+                <hr><hr>
+                <label for="resultados">
+                    <br><h2 name="resultados" id="resultados">Resultados:</h2>
+                    <br><br>
+                    <table>
+                        <tr>
+                            <th>Nome do Atleta:</th>
+                            <th>Pontuações:</th>
+                        </tr>
+                        <tr>
+                            <td><label for="nome_atleta" valu></label></td>
+                            <td></td>
+                        </tr>    
+                    </table>
+                </label>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="notas-atletas.js"></script>
+</html>

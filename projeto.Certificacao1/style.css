@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #ccc;
+}
+
+main {
+    width: 550px;
+    height: 100%;
+    background-color: #f9f9f9;
+    margin: 16px auto;
+    padding: 16px;
+    padding-bottom: 40%;    
+}
+
+img {
+    width: 200px;
+    height: 100px;
+}
+
+.add {
+    background-color: #45a049;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    width: 35%;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    border-color: #45a049;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+input [type="text"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
